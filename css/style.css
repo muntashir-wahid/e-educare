@@ -10,6 +10,10 @@ body {
 /* Page Main Heading */
 /* **************** */
 
+.margin-bottom {
+  margin-bottom: 8.125rem;
+}
+
 /* Navigation */
 
 .nav-register-btn {
@@ -20,4 +24,20 @@ body {
   .nav-register-btn {
     transform: translate(-100%, 36%);
   }
+}
+
+/* Hero Section */
+
+.section-hero {
+  height: 60vh;
+}
+
+.carousel-item--blur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
