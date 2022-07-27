@@ -5,3 +5,12 @@ body {
   font-family: "Poppins", sans-serif;
   color: #777;
 }
+
+/* ****************** */
+/* Page Main Heading */
+/* **************** */
+
+/* Navigation */
+.nav-register-btn {
+  transform: translate(-100%, 36%);
+}
