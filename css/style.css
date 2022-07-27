@@ -6,13 +6,24 @@ body {
   color: #777;
 }
 
-/* ****************** */
-/* Page Main Heading */
-/* **************** */
-
+/* ***************************** */
+/* Reuseable and general styles */
+/* *************************** */
 .margin-bottom {
   margin-bottom: 8.125rem;
 }
+
+.secondary-heading-color {
+  color: #1d1d1d;
+}
+
+.tertiary-heading-color {
+  color: #4a4a4a;
+}
+
+/* ****************** */
+/* Page Main Heading */
+/* **************** */
 
 /* Navigation */
 
