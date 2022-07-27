@@ -17,6 +17,65 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- ----- -->
+    <!-- Modal -->
+    <!-- ----- -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border border-0">
+            <h5 class="modal-title" id="exampleModalLabel">Sign up Now!!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="">
+            <form class="p-4">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="phone-number" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone-number"
+                  placeholder="+880-01*********"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ---------------- -->
     <!-- Page Main Header -->
     <!-- ---------------- -->
@@ -62,6 +121,8 @@
           </div>
           <button
             class="btn btn-outline-primary position-absolute end-0 top-0 d-none d-md-block nav-register-btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             type="submit"
           >
             Register
@@ -191,7 +252,7 @@
           </p>
         </header>
 
-        <div class="row row-cols-1 row-cols-lg-2 g-3">
+        <div class="row row-cols-1 row-cols-lg-2 g-3 mb-4">
           <!-- Course UI/UX -->
           <div class="col">
             <article class="border border-1 d-flex flex-column flex-sm-row">
@@ -319,6 +380,32 @@
                 <p class="text-primary">Price:20$</p>
               </div>
             </article>
+          </div>
+        </div>
+        <footer class="p-2">
+          <button class="btn btn-primary mx-auto d-block">
+            See More Courses
+          </button>
+        </footer>
+      </section>
+
+      <section class="margin-bottom bg-primary text-white p-3 p-lg-5 rounded-2">
+        <div class="row row-cols-1 row-cols-md-2 align-items-center">
+          <div class="col">
+            <h4 class="mb-3 fs-2">Ready to Join?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis ipsum explicabo cupiditate.
+            </p>
+          </div>
+          <div class="col">
+            <button
+              class="btn btn-light text-primary d-block ms-md-auto"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Register Now
+            </button>
           </div>
         </div>
       </section>
