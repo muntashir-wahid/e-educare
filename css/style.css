@@ -53,6 +53,14 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* **************** */
+/* About E-educare */
+/* ************** */
+
+.bg-section-about {
+  background-color: #f4fafd;
+}
+
 /* ******* */
 /* Footer */
 /* ***** */
