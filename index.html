@@ -40,7 +40,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header border border-0">
-            <h5 class="modal-title" id="exampleModalLabel">Sign up Now!!</h5>
+            <h5 class="modal-title text-primary fs-2" id="exampleModalLabel">
+              Rgister Now!!
+            </h5>
             <button
               type="button"
               class="btn-close"
@@ -48,8 +50,17 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="">
+          <div>
             <form class="p-4">
+              <div class="mb-3">
+                <label for="email" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  placeholder="John Smith"
+                />
+              </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input
@@ -69,6 +80,18 @@
                   id="phone-number"
                   placeholder="+880-01*********"
                 />
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  required
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Accept our terms and conditions.
+                </label>
               </div>
             </form>
           </div>
@@ -92,8 +115,8 @@
     <header class="container margin-bottom">
       <!-- Page Navigation -->
       <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
-          <a class="navbar-brand text-primary fw-semibold fs-3" href="#">
+        <div class="container-fluid px-0">
+          <a class="navbar-brand text-primary fw-semibold fs-3" href="#home">
             E-educare
           </a>
           <button
@@ -110,22 +133,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto ms-4">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Courses</a>
+                <a class="nav-link" href="#courses">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="#about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Success</a>
+                <a class="nav-link" href="#success">Success</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#faq">FAQ</a>
               </li>
             </ul>
           </div>
@@ -142,7 +167,7 @@
 
       <!-- Hero Section -->
 
-      <section class="section-hero">
+      <section id="home" class="section-hero">
         <div
           id="carouselExampleDark"
           class="carousel carousel-dark slide h-100"
@@ -251,7 +276,7 @@
 
     <main class="container">
       <!-- Courses section -->
-      <section class="margin-bottom">
+      <section id="courses" class="margin-bottom">
         <header class="w-75 mx-auto mb-5 text-center px-2 py-1">
           <h2 class="secondary-heading-color display-5 fw-semibold">
             Discover Our Popular Courses
@@ -419,7 +444,7 @@
       <!-- About E-educare -->
       <!-- --------------- -->
 
-      <section class="margin-bottom container">
+      <section id="about" class="margin-bottom container">
         <div class="row align-items-center bg-section-about rounded-2">
           <div class="h-100 col-12 col-md-6 px-0">
             <img
@@ -469,7 +494,7 @@
       <!-- Successful Students -->
       <!-- ------------------- -->
 
-      <section class="margin-bottom">
+      <section id="success" class="margin-bottom">
         <header class="w-75 mx-auto mb-5 text-center px-2 py-1">
           <h2 class="secondary-heading-color display-5 fw-semibold">
             Meet Our Successfull Students
@@ -546,7 +571,7 @@
       <!-- Testimonial Setions -->
       <!-- ------------------- -->
 
-      <section class="margin-bottom">
+      <section id="testimonials" class="margin-bottom">
         <header class="w-75 mx-auto mb-5 text-center px-2 py-1">
           <h2 class="secondary-heading-color display-5 fw-semibold">
             Some Students Feedback
@@ -626,7 +651,7 @@
       <!-- ----------- -->
       <!-- FAQ Section -->
       <!-- ----------- -->
-      <section class="margin-bottom">
+      <section id="faq" class="margin-bottom">
         <div class="row justify-content-center">
           <div class="col-md-12 col-lg-8">
             <header class="text-center mb-5">
